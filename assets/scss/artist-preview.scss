@@ -1,0 +1,68 @@
+.artist-feature {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  padding-top: 30px;
+
+  figure.image {
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      animation: blur 2s ease 0s;
+    }
+  }
+
+  .artist-feature--info {
+    color: $dark-color;
+    font-family: $font-roboto;
+    h2 {
+      font-family: $font-fredoka;
+      color: $primary-color;
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .flex-item {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      margin-bottom: 5px;
+
+      strong {
+        color: $dark-color;
+      }
+
+      > label:nth-child(1) {
+        flex-basis: 150px;
+      }
+      > label:nth-child(2) {
+        flex-basis: calc(100% - 150px);
+        color: $primary-color;
+      }
+      .gen {
+        background: #222a2e;
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 0.7em;
+        margin-right: 3px;
+        text-transform: uppercase;
+        line-height: 1em;
+        display: inline-block;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+.divider {
+  margin-top: 50px;
+  h2 {
+    font-family: $font-fredoka;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,38 @@
+.custom-pagination {
+  margin-top: 30px;
+  display: block;
+  li {
+    border-radius: 5px;
+
+    &.pagination-next,
+    &.pagination-previous {
+      padding: 0;
+      margin: 0;
+      height: auto;
+      border: 0;
+    }
+    &.pagination-next.disabled,
+    &.pagination-previous.disabled {
+      padding: 0.1875rem 0.625rem;
+      color: $dark-color;
+    }
+
+    &.current {
+      background-color: $spotify-color;
+      min-width: 30px;
+      text-align: center;
+    }
+
+    a {
+      color: $primary-color;
+      outline: none;
+      border-radius: inherit;
+      min-width: 30px;
+      text-align: center;
+
+      &:hover {
+        background-color: #222a2e;
+      }
+    }
+  }
+}

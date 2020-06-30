@@ -1,0 +1,112 @@
+.content-title {
+  color: $dark-color;
+  font-family: $font-roboto;
+
+  h2 {
+    font-family: $font-fredoka;
+    color: $primary-color;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.content-body {
+  margin-top: 25px;
+
+  .tabs ul {
+    border: 0;
+
+    li {
+      font-family: $font-fredoka;
+      > a {
+        transition: all 0.3s;
+        color: $primary-color;
+      }
+
+      &.is-active > a,
+      &:hover > a {
+        color: $spotify-color;
+        border-bottom-color: $spotify-color;
+      }
+    }
+  }
+}
+
+.spotify-btn {
+  border: 0;
+  display: inline-block;
+  background-color: rgb(29, 185, 84);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 11px 24px;
+  margin: 20px 0px;
+  transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
+  text-decoration: none;
+
+  &:hover {
+    background: #222a2e;
+    color: #fff;
+  }
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #151c21;
+
+  .center-login {
+    display: block;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    h2 {
+      font-family: $font-fredoka;
+      color: #fff;
+    }
+  }
+}
+
+figure.image {
+  img {
+    &.ng-lazyloading {
+      filter: blur(3px);
+    }
+    &.ng-lazyloaded {
+      filter: none;
+      transition: filter 1.5s;
+    }
+  }
+}
+
+.swal2-modal {
+  .swal2-header {
+    .swal2-title {
+      font-family: $font-fredoka;
+      font-weight: 300;
+      line-height: 2rem;
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .swal2-html-container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.dis-inl {
+  display: inline-block;
+}
